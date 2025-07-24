@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pattern Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>PATTERN GENERATOR</h2>
+  <label for="numInput">Enter a number:</label>
+  <input type="number" id="numInput"/>
+  <br><br>
+  <label for="patternType">Choose a Pattern:</label>
+  <select id="patternType">
+    <option value="triangle">Right-Angled Triangle</option>
+    <option value="square">Solid Square</option>
+    <option value="reverse">Reverse Triangle</option>
+    <option value="hollowSquare">Hollow Square</option>
+    <option value="numberTriangle">Number Triangle</option>
+    <option value="pyramid">Pyramid</option>
+    <option value="rightAlignedNumber">Right-Aligned Number Triangle</option>
+    <option value="pascals">Pascal’s Triangle</option>
+    <option value="floyds">Floyd’s Triangle</option>
+    <option value="checkerboard">Checkerboard</option>
+  </select>
+  <button onclick="generatePattern()">Generate Pattern</button>
+  <h3>Output:</h3>
+  <pre id="outputArea"></pre>
+  <script src="script.js"></script>
+</body>
+</html>
